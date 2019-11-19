@@ -1,0 +1,324 @@
+{
+	"info": {
+		"_postman_id": "0b9f2edc-6e5b-4b34-a0d3-84435efd8676",
+		"name": "Laravel",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Laravel Passport - Sign Up",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "kelly",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "kelly991@mail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text"
+						},
+						{
+							"key": "password_confirmation",
+							"value": "123456",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:89/api/auth/signup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "89",
+					"path": [
+						"api",
+						"auth",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Laravel Passport - Login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "X-Requested-With",
+						"type": "text",
+						"value": "XMLHttpRequest"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "oliver@mail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:89/api/auth/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "89",
+					"path": [
+						"api",
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Laravel Passport - Logout",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjIyMTFhYjg5ZWNiN2EyMWQ1OWQwZjMwZjAyZTkwYWY0MWUyZjliOGIwYjEwNjI0OTFlNmQwNjNhNDk4ZjUzYWQxNDEyMDQ3YWJmNWQyZDBhIn0.eyJhdWQiOiIxIiwianRpIjoiMjIxMWFiODllY2I3YTIxZDU5ZDBmMzBmMDJlOTBhZjQxZTJmOWI4YjBiMTA2MjQ5MWU2ZDA2M2E0OThmNTNhZDE0MTIwNDdhYmY1ZDJkMGEiLCJpYXQiOjE1NzQxNzU2ODQsIm5iZiI6MTU3NDE3NTY4NCwiZXhwIjoxNjA1Nzk4MDg0LCJzdWIiOiI1MCIsInNjb3BlcyI6W119.aYJ1CMGX3QhcU-LAJ0HUHKJtQFcHj0pIwFSPv1XUYPTO7ux1xViqFYILnVyPPuWjFm-JaJdxjiER1okdY2-8ltUiI-_YVPt98xewvbjn3EayfqJ6rLna0N03QkUGhTQdwZGQPZMqnG6GWLbPcSct9xJ93dQJlaFjtg4669RZNoHV6hm716q2vJUn_Sb4rxS6NoIOd0A1rE-76cpOrGBRuj2KLG2KUFHl3rw1ZnZz37O3sOQtPctzclnVMx0CmyLaeljEWqKhZC7PgCmcKr-7pzDbimnxoLJc3ymo8lAMzyWEKVc6CQM2embC6Mm3uLzSJ2p79REbF0JEhjkzi3l3EcOxJ27BBItaUVd4opDwvrZ6TMTXtKWXU1-2CzOC0Ik6IksPoBAtwUFhAAbVa55lIbmdZQPU40c8yu7JRyY0cK7rStYsX6SKuvjSYxArl4Pb3IleOV8uyNKR-iM5sjJdbAhYBTiF457ihryk-2KxktQ78DgbFzxRvwyerfNtWUU4eiWSnfGFWlWpS3LrCghnfujcpC0p4dQ1zhNmUMYX9zPxN1MIy0q3IT3Tw8W-Ywo0Gea-R7AXx6mU_IDvWpn_-wt1uldRQYnqplVTy_YTtk3xOi9kPLzykS1zsjiwR6zW31fy-Beob_SXDuPbty1eptVkkSTjiMZghAmhomiC6AI",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://localhost:89/api/auth/logout",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "89",
+					"path": [
+						"api",
+						"auth",
+						"logout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Laravel Passport - User",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImQxNjE4ZWRmNjA3YzBmNDU3Yzk4ZjkxMmQxOGRkM2ZiNjdhYzgyYjhkMGVhNjQxYjZlZDdhMzI3MTUzOGIwMjQ4MDc2YjE1NjBkYWRkYjZhIn0.eyJhdWQiOiIxIiwianRpIjoiZDE2MThlZGY2MDdjMGY0NTdjOThmOTEyZDE4ZGQzZmI2N2FjODJiOGQwZWE2NDFiNmVkN2EzMjcxNTM4YjAyNDgwNzZiMTU2MGRhZGRiNmEiLCJpYXQiOjE1NzQxNzU4MjAsIm5iZiI6MTU3NDE3NTgyMCwiZXhwIjoxNjA1Nzk4MjIwLCJzdWIiOiI1MCIsInNjb3BlcyI6W119.Z3qtkRLBD_uiwON5Eea8qA1XSBYYN-uaU2IAYsFNDzTrsrbwd5wdIBGPk10tw8noS0qxB5W2MB9i1KmEfgI41K9-nGOBDOo3RCyOqU8wSts9mlxj-31j-uduhdP2UvLImVlO4YIPLWUTwAN9jSxreQUAE7R4I8GOFZ4raOSSK-8E-JAzVxbcfMmsCVGXLXHmKpAaMp6SI9CgYuvFWjOXLixtExx-3Pppy90vjo_Kg7ycrbSNRqxo-Z1NLD-lC6Rk_LJwlkV6emqq796aNk7Tgq1BoeGl3gPdBbOgSoJhxFUNJg0w7LxDla8jwY6zEsKbX_jNVXo7RYf7yw2xjyE8eU5dE73Q7ixHF-VbvJIU1qOmxBQlID5DiMuR8gfy1af1E-ymYbvuFQ_VdSsW3zR-_NVmagtwt7xIvliOLQfiW0UI8CmnycZQ_gq6K2TrkfTrxAirxu0Dz9JfJ-u7nGElmw25ECKi5gXSS4VGMZkyx3WUZFS_1cyrZ87LjzMSNZ_h0u46x1UnH83a02z-R_u3V4yE7qQ9NC-K38-CtNSnGUuL4_V0gDNtlkwpartZthfgW5reLNKL3078OtLqOMFti4u3vUuybw26gpoVOTXhgt5pflRcFa5k0kbYif5NXdeKRh20OgeZgneQMKg-Lt4l0JTyBdwMHRX8fQtax6UPNwM"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "jack@mail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:89/api/auth/user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "89",
+					"path": [
+						"api",
+						"auth",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Laravel Passport - Get Listing",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImQ4N2VkMDhkYWY0MDkwNDZhNTliM2JlNDE2YzM1NDBlYzIyNzZhOTBmZjk4NDM2ZjYxYzU4MDU4Yjg0NGIyNmRhYTQwOTMzZmUwNTVjOTQzIn0.eyJhdWQiOiIxIiwianRpIjoiZDg3ZWQwOGRhZjQwOTA0NmE1OWIzYmU0MTZjMzU0MGVjMjI3NmE5MGZmOTg0MzZmNjFjNTgwNThiODQ0YjI2ZGFhNDA5MzNmZTA1NWM5NDMiLCJpYXQiOjE1NzQxNTExMzAsIm5iZiI6MTU3NDE1MTEzMCwiZXhwIjoxNjA1NzczNTMwLCJzdWIiOiI1MCIsInNjb3BlcyI6W119.c8V9UDfc220KDIWNkcujUp0wxaqUqDN20LazGmlXuA0XWEUeK5VebsmvknNjM80WYDIQwNsx7OuRYW2K04AwLO4q6Es3XK-0gDLMnFXGJCol_JOvlS7bGN17JBzSDjNvL_-LHsrdCNyF6QK8cik6_jWGV9gATLrvGdOKN5APrJSTqN6peTGgMcf0yODJVXzML56eyZ4N1dH9hNkl55hrX542Udv-KfFYODkmLSm93bg2N0RyqmUw1VG4oYppdhn14Wpb713WVpB-y4PApo7fB5ygc_AuiCYpT1TCxX33rqOw2PKxT7mpaHXeD-i2QNV67jDLKcMluglAoYTip-QBME22zv4n2sV0TZMOXxDRoVvaUcsWG7HRuo_7oGQMc_CCdLHFAEpC1vPoq6XmSK8AbY9pr4ec7w4m8xSbSeFXAZsap3Ru1pOd4csKBmBBn4ZVlllAlgNsAsOPvDmhH3Pbnb0w8ZDqdgmV3SnfqCNtPJkmevvsqHTzoBbzvL_-N6OuLSsFgOWgJFdZ53YX4vMksnv44IcIFyJOZNfmNlQJMCbFrwQfQwOaGI8Zp0yxw_MRZebVwmXr7OSvaxcMsCl0WIrTmcfcjaGuDLOrLM2neiMrYkyt5zQZL3USQfQ3XTmZWhvRdHsSxZbuBVq6xK0iQmX2hPouBJN25B2dXgR9iNo"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://localhost:89/api/auth/listing?user_id=2&latitude=3.117570&longitude=101.678855",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "89",
+					"path": [
+						"api",
+						"auth",
+						"listing"
+					],
+					"query": [
+						{
+							"key": "user_id",
+							"value": "2"
+						},
+						{
+							"key": "latitude",
+							"value": "3.117570"
+						},
+						{
+							"key": "longitude",
+							"value": "101.678855"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Laravel Passport - Update listing",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjIxMzE4MTg3YjNkOTYyM2JlMTRhMDEwMzRkYTJkYmMzYjI3ODgwMjRmMDYwZTRiNmUyYzU5MDVjMTNiOWNmOTFjN2UzNmUxZWY3M2I4NTdjIn0.eyJhdWQiOiIxIiwianRpIjoiMjEzMTgxODdiM2Q5NjIzYmUxNGEwMTAzNGRhMmRiYzNiMjc4ODAyNGYwNjBlNGI2ZTJjNTkwNWMxM2I5Y2Y5MWM3ZTM2ZTFlZjczYjg1N2MiLCJpYXQiOjE1NzQxNzE4MTcsIm5iZiI6MTU3NDE3MTgxNywiZXhwIjoxNjA1Nzk0MjE3LCJzdWIiOiI1MCIsInNjb3BlcyI6W119.D-uOLBn4sNyweYCTbil2oj0GSOeV7ZjKFkzTEBpFbBJpVJ0eUKyaHlfLjx6u5pLA6cl-QPpRiPVBQFgrrqacVtHwo1_gAwHkGtnrsg8Zn-CnYMYRyEBGV8XcgWfcbLtEuYd8ZBJPgvJOPTtNQC5B7W6eN7p23x29feNS4QHCv8DJo9ypU1s1QUCxJZD_fQlu2KqG95LFp9l80xbBKNZJN10vxJSu1ys90H_UPAjRd_W5qmSMF49je_bQXn0txgEmt2D7l8XTNTNg3yzXJ6sptwCS3p-yKTJd4gDfx1w43nO4iieksQVFyz3cZ32Ve27huWLHlWP9Ei7Mcm2X3sxpfc1FVfdPp4MlhFdszMvKhGR4SG7RQ1tCsYXnsIqHTnhc7ODdZ5C0cjKKqzaKn1cy5ZsPiQOrB3bF70J6753Go0LHY_Eu363UB1h4OG_fReKTdStqNW-6pSEoKDFWkF0G7WL0H-ndeYDqoc2tVh19jRcrHahCbrtQUUCnzImFRItVi_PG86-pnDsU2rwQnSOacMrzrA5SZP5N5tQOEj-_sRLLkCkN2g6WBnQrX55V02skDSB9KNxOLfDWBshYLjepz5Xq9J99HjqvXyZWHhRtsDb5epg2sQLpNlORdVlCIkedaQNfDnId2ssrQuKWLu6rTZiU1xicycm-g7lqpoetHN4"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "list_name",
+							"value": "Jackson",
+							"type": "text"
+						},
+						{
+							"key": "listing_id",
+							"value": "54",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:89/api/auth/updateListing",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "89",
+					"path": [
+						"api",
+						"auth",
+						"updateListing"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
